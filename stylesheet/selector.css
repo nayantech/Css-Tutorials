@@ -1,0 +1,22 @@
+#a{
+    color: aquamarine;
+}
+
+.b{
+    color: red;
+}
+
+div, p{
+    color: blue;
+}
+
+h1{
+    color: aqua;
+}
+
+*{
+    text-align: center;
+}
+p:hover{
+    background-color: black;
+}

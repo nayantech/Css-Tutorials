@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex and Flex wrap</title>
+    <style>
+        .a{
+            border: 2px solid red;
+            display: flex;
+            flex-wrap: wrap;                 
+                                                                            /* ------(wrap used  for adject item on wrap or reverse-wrap) */
+            
+            justify-content: center;
+            height: 500px;
+            align-items: center;
+        }
+        #b{
+            border: 2px solid pink;
+            width: 150px;
+            height: 150px;
+            /* float: left; */
+            margin: 20px;
+            
+           
+        }
+
+        .c{
+            /* flex-grow: 1; */
+            /* flex-shrink: 1; */
+        }
+
+        .d{
+            flex-grow: 3;
+            /* flex-shrink: 3; */
+        }
+    </style>
+</head>
+<body>
+    <div class="a">
+        <div id="b"> 1 </div>
+        <div id="b" class="c">2</div>
+        <div id="b" class="d">3</div>
+        <div id="b">4</div>
+    </div>
+</body>
+</html>

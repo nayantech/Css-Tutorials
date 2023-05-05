@@ -1,0 +1,91 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Drop-Down</title>
+        <style>
+            .d1{
+                border: 2px solid red;
+                height: 200px;
+                width: 100%;
+                
+            }
+
+            .d1 > ul {
+                background-color: aqua;
+            }
+            .d1 ul{
+                list-style: none;
+                margin: 0px;
+                padding: 0px;
+                float: left;
+                position: relative;
+            }
+            .d1 ul a{
+                text-decoration: none;
+                padding: 0px 15px;
+                line-height: 32px;
+                display: block;
+            }
+
+            .d1 ul li{
+                float: left;
+                position: relative;
+                margin: 0px;
+                padding: 0px;
+            }
+
+            .d1 ul ul{
+                position: absolute;
+                background-color: aquamarine;
+                display: none;
+
+            }
+
+            .d1 ul ul li{
+                float: none;
+                width: 100px;
+            }
+            .d1 ul ul ul{
+                top: 0px;
+                left: 100%;
+            }
+
+            .d1 ul li:hover > ul{
+                display: block;
+            }
+
+            .d1 ul li:hover{
+                background-color: royalblue;
+            }
+
+         
+
+
+
+        </style>
+    </head>
+    <body>
+        <div class="d1">
+            <ul>
+                <li><a href="#">Menu1</a></li>
+                <li><a href="#">Menu2</a></li>
+                <ul>
+                    <li><a href="#">subMenu1</a></li>
+                    <li><a href="#">subMenu2</a></li>
+                    <li><a href="#">subMenu3</a></li>
+                    <ul>
+                        <li><a href="#">ssMenu1</a></li>
+                        <li><a href="#">ssMenu2</a></li>
+                        <li><a href="#">ssMenu3</a></li>
+                    </ul>
+                    
+                </ul>
+                <li><a href="#">Menu3</a></li>
+                <li><a href="#">Menu4</a></li>
+            </ul>
+        </div>
+    </body>
+    </html>

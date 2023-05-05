@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+
+        .a{
+            /* background-image: linear-gradient(to bottom right, red, yellow, green); */
+            background-image: url("lightimage.jpg");
+            opacity: 1;
+        }
+        .navbar{
+            opacity: 0.8;
+            border: 10px solid black;
+            width: 97%;
+            height: 80px;
+            padding-top: 50px;
+            border-radius: 20px;
+            list-style: none;
+            background-color: blanchedalmond;
+            
+            font-size: 30px;
+            
+        }
+
+        .navbar li{
+            opacity: 1;
+            color: red;
+        }
+
+        .navbar:hover li:nth-child(even){
+           color: green;
+        }
+
+        .navbar:hover li:nth-child(odd){
+           color: yellow;
+        }
+
+
+        ul li{
+           float: left;
+           margin: 5px;
+        }
+
+        .search{
+            /* border: 2px solid black; */
+            border-radius: 50px;
+            
+            float: right;
+            padding-right: 20px;
+            
+        }
+    </style>
+</head>
+<body class="a">
+    <div>
+        <table>
+            <tr>
+                <ul class="navbar">
+                    <li>Home</li>
+                    <li>Carrer</li>
+                    <li>Contact Us</li>
+                    <li>Help</li>
+                    <div class="search" >
+                        <input type="search" name="search" id="search" placeholder="Search here!!"> 
+                     </div>
+                </ul>
+            </tr>
+        </table>
+
+    </div>
+</body>
+</html>
