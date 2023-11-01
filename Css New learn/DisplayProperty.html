@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property</title>
+    <style>
+        /* Css Display Property
+
+        1) {display: none;}
+        2) {display: inline;}
+        3) {display: block;}
+        4) {display: inline-block;}
+
+        CSS Syntax
+        display: value;
+
+        inline	--Displays an element as an inline element (like <span>). Any height and width properties will have no effect
+
+        block	--Displays an element as a block element (like <p>). It starts on a new line, and takes up the whole width
+
+        inline-block	--Displays an element as an inline-level block container. The element itself is formatted as an inline element, but you can apply height and width values
+
+        none	--The element is completely removed */
+
+
+        .display-none{
+            display: none;
+            color: red;
+        }
+
+
+        .display-inline{
+            display: inline;
+            color: black;
+            font-size: 20px;
+            border: 1px solid red;
+            /* width: 50%;
+            height: 40px; */
+        }
+
+        .display-block{
+            display: block;
+            color: blueviolet;
+            font-size: 30px;
+        }
+
+        .display-inline-block{
+            display: inline-block;
+            color: green;
+            font-size: 20px;
+            border: 1px solid red;
+            /* width: 50%; */
+            /* height: 100px; */
+        }
+
+    </style>
+</head>
+<body>
+    
+    <!-- display-none  -->
+    <div class="display-none">
+       HTML stands for hypertext markup language
+       CSS stands for cascading style sheet
+    </div>
+    <br><br><br>
+
+
+    <!-- display-inline -->
+    <div class="display-inline">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea commodi nobis accusamus ducimus velit temporibus, incidunt quidem reprehenderit consequatur cum?
+    </div>
+    <br><br><br>
+
+    <!-- display-block   -->
+    <div>
+        Lorem ipsum dolor sit amet <span class="display-block"> Lorem ipsum dolor sit amet. </span> consectetur adipisicing elit. Magni, excepturi.
+    </div>
+    <br><br><br>
+
+    <!-- display-inline-block   -->
+    <div class="display-inline-block"> Lorem ipsum dolor sit amet.</div>
+    <div class="display-inline-block" style="color: red;"> Lorem ipsum dolor sit amet.</div>
+</body>
+</html>

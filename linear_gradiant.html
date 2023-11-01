@@ -9,8 +9,8 @@
         div{
             border: 2px solid red;
             width: 70%;
-            height: 500px;
-            margin: 20px;
+            height: 200px;
+            margin: 20px auto;
            
             
         }
@@ -35,14 +35,27 @@
         .f{
             background-image: linear-gradient( red, green,yellow); 
         }
+
+        /* here using degree */
         .g{
-            background-image: linear-gradient(180deg, red, green);
+            background-image: linear-gradient(90deg, red, green);
         }
+
+        /* here using transperency also */
         .h{
-            background-image: linear-gradient(to right,rgba(255,0,0,1),rgba(0,255,0,0));
+            background-image: linear-gradient(to right,rgba(255,0,0,1),rgba(0,255,0,0.5));
         }
+        
+        
         .i{
             background-image: repeating-linear-gradient(red,yellow 10%, blue 20%);
+        }
+
+
+
+        /* repeating in degree */
+        .j{
+            background-image: repeating-linear-gradient(45deg, red 5%,yellow 10%, blue 20%);
         }
     </style>
 </head>
@@ -80,6 +93,10 @@
     </div>
 
     <div class="i">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt recusandae, provident dolorem repellendus possimus esse reiciendis unde voluptatem obcaecati placeat eligendi molestiae repellat sint alias. Eaque placeat quidem odit esse!</p>
+    </div>
+
+    <div class="j">
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt recusandae, provident dolorem repellendus possimus esse reiciendis unde voluptatem obcaecati placeat eligendi molestiae repellat sint alias. Eaque placeat quidem odit esse!</p>
     </div>
 </body>

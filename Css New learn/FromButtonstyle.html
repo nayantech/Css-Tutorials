@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Button style by attribute selector</title>
+    <style>
+
+        input[type=button], input[type=submit], input[type=reset] {
+        background-color: #04AA6D;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+        }
+
+
+        /* Design select */
+        select {
+        width: 100%;
+        padding: 16px 20px;
+        border: none;
+        border-radius: 4px;
+        background-color: #f1f1f1;
+        }
+
+
+        /* Styling Textareas
+        Tip: Use the resize property to prevent textareas from being resized (disable the "grabber" in the bottom right corner): */
+
+        /* for textarea */
+        textarea {
+        width: 100%;
+        height: 150px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        font-size: 16px;
+        resize: none;
+        }
+    </style>
+</head>
+<body>
+    <h2>Styling form buttons</h2>
+
+    <input type="button" value="Button">
+    <input type="reset" value="Reset">
+    <input type="submit" value="Submit">
+
+
+    <br><br><br><br><br>
+    <!-- Design select -->
+
+
+    
+    <form>
+        <select id="country" name="country">
+        <option value="au">Australia</option>
+        <option value="ca">Canada</option>
+        <option value="usa">USA</option>
+        </select>
+      </form>
+
+
+
+      <br><br><br><br><br>
+      <!-- for textarea -->
+      <h2>Styling textarea</h2>
+
+    <p><strong>Tip:</strong> Use the resize property to prevent textareas from being resized (disable the "grabber" in the bottom right corner):</p>
+
+    <form>
+    <textarea>Some text...</textarea>
+    </form>
+</body>
+</html>

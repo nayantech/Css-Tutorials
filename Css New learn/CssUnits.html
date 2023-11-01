@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Units</title>
+    <style>
+        /* CSS Units
+        CSS has several different units for expressing a length.
+
+        Many CSS properties take "length" values, such as width, margin, padding, font-size, etc.
+
+        Length is a number followed by a length unit, such as 10px, 2em, etc.
+
+        Note: A whitespace cannot appear between the number and the unit. However, if the value is 0, the unit can be omitted.
+
+        For some CSS properties, negative lengths are allowed.
+
+        There are two types of length units: absolute and relative.
+
+        Absolute Lengths
+        The absolute length units are fixed and a length expressed in any of these will appear as exactly that size.
+
+        Absolute length units are not recommended for use on screen, because screen sizes vary so much. However, they can be used if the output medium is known, such as for print layout. */
+
+        /* Unit	Description
+        cm	    --centimeters
+        mm	    --millimeters
+        in	    --inches (1in = 96px = 2.54cm)
+        px*	    --pixels (1px = 1/96th of 1in)
+        pt	    --points (1pt = 1/72 of 1in)
+        pc	    --picas (1pc = 12 pt) */
+
+        /* * Pixels (px) are relative to the viewing device. For low-dpi devices, 1px is one device pixel (dot) of the display. For printers and high resolution screens 1px implies multiple device pixels.
+
+
+
+
+
+        Relative Lengths
+        Relative length units specify a length relative to another length property. Relative length units scale better between different rendering medium. */
+        /* Tip: The em and rem units are practical in creating perfectly scalable layout!
+        * Viewport = the browser window size. If the viewport is 50cm wide, 1vw = 0.5cm. */
+
+        /* Unit	Description
+        em	  -- Relative to the font-size of the element (2em   means 2 times the size of the current font) 
+        ex	  -- Relative to the x-height of the current font (rarely used)
+        ch	  -- Relative to the width of the "0" (zero)
+        rem	  -- Relative to font-size of the root element
+        vw	  -- Relative to 1% of the width of the viewport*
+        vh	  -- Relative to 1% of the height of the viewport*
+        vmin	  -- Relative to 1% of viewport's* smaller dimension
+        vmax	  -- Relative to 1% of viewport's* larger dimension
+        %	  -- Relative to the parent element */
+
+
+        /* for em  */
+        /* p {
+        font-size: 16px;
+        line-height: 2em;
+        }
+
+        div {
+        font-size: 30px;
+        border: 1px solid black;
+        }
+
+        span {
+        font-size: 0.5em;
+        } */
+
+
+
+
+        /* for ex */
+        /* div {
+        font-size: 30px;
+        border: 1px solid black;
+        }
+
+        span {
+        font-size: 1ex;
+        } */
+
+
+
+        /* for ch */
+        /* body {
+        font-size:16px;
+        }
+
+        div {
+        font-size: 3ch;
+        border: 1px solid black;
+        } */
+
+
+
+        /* for rem */
+        /* html {
+        font-size:16px;
+        }
+
+        div {
+        font-size: 3rem;
+        border: 1px solid black;
+        }
+
+        #top-div {
+        font-size: 2rem;
+        border: 1px solid red;
+        } */
+
+
+        /* for vw */
+        /* h1 {
+        font-size: 20vw;
+        } */
+
+
+
+        /* for vh */
+        /* h1 {
+        font-size: 20vh;
+        } */
+
+
+
+        /* for vmin */
+        /* h1 {
+        font-size: 15vmin;
+        } */
+
+
+
+        /* for vmax */
+        /* h1 {
+        font-size: 15vmax;
+        } */
+
+
+
+        /* for percentage */
+        body {
+        font-size:16px;
+        }
+
+        div {
+        font-size: 150%;
+        border: 1px solid black;
+        }
+
+    </style>
+</head>
+<body>
+     <!-- for em -->
+        <!-- <p>These paragraphs have a calculated line-height of: 2x16px = 32px.</p>
+        <p>These paragraphs have a calculated line-height of: 2x16px = 32px.</p>
+        <p>These paragraphs have a calculated line-height of: 2x16px = 32px.</p>
+        <div>The font-size of the div element is set to 30px. <span>The span element inside the div element has a font-size of 0.5em, which equals to 0.5x30 = 15px</span>.</div> -->
+
+
+
+        <!-- for ex -->
+        <!-- <div>The font-size of the div element is set to 30px. <span>The span element inside the div element has a font-size of 1ex</span>.</div> -->
+
+
+        <!-- for ch -->
+        <!-- <p>The font-size of this document is 16px.</p>
+
+        <div>The font-size of this div element is 3ch.</div>
+
+        <p>The ch unit sets the font-size relative to the width of the character "0".</p> -->
+
+
+
+        <!-- for rem -->
+        <!-- <p>The font-size of this document is 16px.</p>
+
+        <div id="top-div">
+        The font-size of this div element is 2rem, which translates to 2 x the browser's font size.
+        <div>The font-size of this div element is 3rem. It also shows that it does not inherit from its parent element font size.</div>
+        </div>
+
+        <p>The rem unit sets the font-size relative to the browsers base font-size, and will not inherit from its parents.</p> -->
+
+
+
+        <!-- for vw -->
+        <!-- <h1>Hello</h1>
+
+        <p>Resize the width of the browser window to see how the font-size of h1 changes.</p>
+        <p>1vw = 1% of viewport width.</p> -->
+
+
+
+        <!-- for vh -->
+        <!-- <h1>Hello</h1>
+
+        <p>Resize the height of the browser window to see how the font-size of h1 changes.</p>
+        <p>1vh = 1% of viewport height.</p> -->
+
+
+
+        <!-- for vmin -->
+        <!-- <h1>Hello</h1>
+
+        <p>Resize the browser window (both width and height) to see how the font-size of h1 changes.</p>
+        <p>1vmin = 1vw or 1vh, whichever is smaller.</p> -->
+
+
+
+        <!-- for vmax -->
+        <!-- <h1>Hello</h1>
+
+        <p>Resize the browser window (both width and height) to see how the font-size of h1 changes.</p>
+        <p>1vmax = 1vw or 1vh, whichever is larger.</p>
+        <p>The vmax unit is not supported in Edge 15 and earlier, nor in Safari 6.1 and earlier.</p> -->
+
+
+        <!-- for percentage(%) -->
+        
+        <p>The font-size of this document is 16px.</p>
+
+        <div>The font-size of this div element is 150%.</div>
+
+        <p>The % unit sets the font-size relative to the current font-size.</p>
+</body>
+
+</html>

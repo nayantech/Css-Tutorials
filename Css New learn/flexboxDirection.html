@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox all property</title>
+    <style>
+        /* for flexbox only */
+        /* section{
+            display: flex;
+           
+            border: 1px solid red;
+
+        }
+        section div{
+            background-color: black;
+            border: 1px solid red;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            color: white;
+        } */
+
+
+
+        /* The flex-direction Property */
+        /* The column value stacks the flex items vertically (from top to bottom): */
+
+        /* .flex-container { */
+            /* display: flex; */
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+            /* } */
+
+
+            /* The row value stacks the flex items horizontally (from left to right): */
+
+            .flex-container {
+                display: flex;
+                /* flex-direction: row; */
+                /* flex-direction: row-reverse ; */
+
+                flex-direction: column;
+                /* flex-direction: column-reverse; */
+                border: 1px solid red;
+                }
+
+
+           .flex-container  div{
+            background-color: black;
+            border: 1px solid red;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- The flex container becomes flexible by setting the display property to flex:
+    The flex container properties are:
+    1) flex-direction
+    2) flex-wrap
+    3) flex-flow
+    4) justify-content
+    5) align-items
+    6) align-content -->
+    
+
+    <!-- for flexbox only -->
+    <!-- <section>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </section> -->
+
+     <section class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </section>
+</body>
+</html>

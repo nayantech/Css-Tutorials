@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+    <style>
+        /* body{
+            overflow-x: hidden;
+        } */
+        .container{
+            border: 10px solid red;
+            width: 100%;
+            height: 700px;
+            display: flex;
+            
+            
+        }
+
+        /*Id Selector prefrence is more in css to any other */
+        /* #box{
+            border: 1px solid red;
+            background-color: black;
+            width: 150px;
+            height: 150px;
+            color: white;
+        } */
+
+
+        /* By Default Position is static */
+        .box{
+            border: 5px solid black;
+            background-color: green;
+            width: 150px;
+            height: 150px;
+            color: white;
+            font-weight: bolder;
+            margin: 20px;
+ 
+        }
+        
+
+        .relative{
+
+            background-color: pink;
+            position:relative;
+            /* top: 50px; */
+            /* right: 50px; */
+            /* left: 900px; */
+            /* bottom: 100px; */
+        }
+        .absolute{
+         
+         position: absolute;
+         /* position: relative; */
+         background-color: yellow;
+         /* right: 100px; */
+         /* top: 100px; */
+
+     }
+       
+        .fixed{
+            background-color: aqua;
+            position: fixed;
+            top: 200px;
+            /* left: 100px; */
+            /* bottom: 100px; */
+            
+        }
+       
+    </style>
+</head>
+<body>
+
+    <!-- 1) static  --by default
+    2) relative
+    3) fixed
+    4) sticky
+    5) absolute -->
+
+
+    <section class="container">
+       
+
+        <div class="box    absolute" >
+            A
+        </div>
+
+        <div class="box    relative" >
+            B
+        </div>
+
+        <div class="box    fixed" >
+            C
+        </div>
+
+        <div class="box    " >
+            D
+        </div>
+    
+        <div class="box    " >
+            E
+        </div>
+
+    </section>
+</body>
+</html>

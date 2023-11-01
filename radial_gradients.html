@@ -6,32 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>radial_gradiant</title>
     <style>
+
+        
         div{
             border: 2px solid red;
             width: 70%;
-            height: 500px;
-            margin: 20px;
-           
-            
+            height: 200px;
+            margin: 20px auto;       
         }
 
         .a{
             background-image: radial-gradient( red, green,yellow);
         }
         .b{
-            background-image: radial-gradient( red 5%, green 20%,yellow);
+            background-image: radial-gradient( red 5%, green 15%,yellow 20%);
         }
+        .e{
+            background-image: radial-gradient(circle, red, green,yellow);                                       
+             /* by default they will show top to bottom */
+
+        }
+        .h{
+            background-image: repeating-radial-gradient(blue 5%,pink 10%,yellow 15%);
+        }
+
+
+
+
         .c{
             background-image: radial-gradient(closest-side at 60% 55%, red, green,yellow);
         }
         .d{
             background-image: radial-gradient(closest-corner, red, green,yellow);
         }
-        .e{
-            background-image: radial-gradient(circle, red, green,yellow);                                       
-                                                                                                    /* by default they will show top to bottom */
-
-        }
+       
         .f{
             background-image: radial-gradient(farthest-side at 60% 55%, red, green,yellow);
         }
@@ -67,6 +75,10 @@
     </div>
 
     <div class="g">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt recusandae, provident dolorem repellendus possimus esse reiciendis unde voluptatem obcaecati placeat eligendi molestiae repellat sint alias. Eaque placeat quidem odit esse!</p>
+    </div>
+
+    <div class="h">
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt recusandae, provident dolorem repellendus possimus esse reiciendis unde voluptatem obcaecati placeat eligendi molestiae repellat sint alias. Eaque placeat quidem odit esse!</p>
     </div>
 

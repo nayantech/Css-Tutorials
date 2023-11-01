@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box - Sizing</title>
+    <style>
+        .a{
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            /* padding: 20px; */
+            padding: 50px;
+        }
+
+        .b{
+            box-sizing: border-box;
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            padding: 20px;
+            /* padding: 40px; */
+
+        }
+    </style>
+</head>
+<body>
+    <div class="a">
+        HTML is the mar
+    </div>
+
+    <br><br><br><br><br>
+    <div class="b">
+        HTML is the mar
+    </div>
+
+
+
+    <!-- By default, the width and height of an element is calculated like this:
+        without box sizing
+    width + padding + border = actual width of an element
+    height + padding + border = actual height of an element -->
+
+    
+
+
+    <!--
+        with the box sizing ?
+    The box-sizing property allows us to include the padding and border in an element's total width and height.
+    If you set box-sizing: border-box; on an element, padding and border are included in the width and height: -->
+</body>
+</html>

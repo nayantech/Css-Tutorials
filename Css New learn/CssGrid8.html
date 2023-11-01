@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Grid</title>
+
+    <style>
+
+    /* The grid-row Property:
+    The grid-row property defines on which row to place an item.
+
+    You define where the item will start, and where the item will end.
+    Note: The grid-row property is a shorthand property for the grid-row-start and the grid-row-end properties. 
+    To place an item, you can refer to line numbers, or use the keyword "span" to define how many rows the item will span:
+    */
+
+
+    
+    .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+    }
+
+    .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    }
+
+
+    /* Make "item1" start on row-line 1 and end on row-line 4: */
+    /* .item1 {
+    grid-row: 1 / 4;
+    } */
+
+    /* Make "item1" start on row 1 and span 2 rows: */
+        /* .item1 {
+    grid-row: 1 / span 2;
+
+    } */
+    </style>
+</head>
+<body>
+    <h1>The grid-row Property</h1>
+
+    <p>Use the <em>grid-row</em> property to specify where to place an item.</p>
+    <p>Item1 will start on row-line 1 and end on row-line 4:</p>
+
+    <div class="grid-container">
+    <div class="item1">1</div>
+    <div class="item2">2</div>
+    <div class="item3">3</div>  
+    <div class="item4">4</div>
+    <div class="item5">5</div>
+    <div class="item6">6</div>
+    <div class="item7">7</div>
+    <div class="item8">8</div>  
+    <div class="item9">9</div>
+    <div class="item10">10</div>
+    <div class="item11">11</div>
+    <div class="item12">12</div>
+    <div class="item13">13</div>
+    <div class="item14">14</div>
+    <div class="item15">15</div>
+    <div class="item16">16</div>
+    </div>
+</body>
+</html>

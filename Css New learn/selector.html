@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <style>
+
+       /* 1) Simple selectors (select elements based on name, id, class)
+       2) Combinator selectors (select elements based on a specific relationship between them)
+       3) Pseudo-class selectors (select elements based on a certain state)
+       4) Pseudo-elements selectors (select and style a part of an element)
+       5)  Attribute selectors (select elements based on an attribute or attribute value) */
+
+       /* The CSS element Selector
+        The element selector selects HTML elements based on the element name. */
+        /* p {
+            text-align: center;
+            color: red;
+            }  */
+
+
+
+            /* The CSS id Selector
+            The id selector uses the id attribute of an HTML element to select a specific element.
+            The id of an element is unique within a page, so the id selector is used to select one unique element!
+            To select an element with a specific id, write a hash (#) character, followed by the id of the element. */
+
+            /* #para1 {
+            text-align: center;
+            color: red;
+            } */
+
+
+            /* The CSS class Selector
+            The class selector selects HTML elements with a specific class attribute.
+            To select elements with a specific class, write a period (.) character, followed by the class name. */
+
+            /* .center {
+            text-align: center;
+            color: red;
+            } */
+
+
+            /* or class selector other way */
+            /* p.center {
+                text-align: center;
+                color: red;
+                }
+
+                p.large {
+                font-size: 300%;
+                } */
+
+
+
+                /* The CSS Universal Selector
+                The universal selector (*) selects all HTML elements on the page. */
+                /* * {
+                text-align: center;
+                color: blue;
+                } */
+
+
+
+                /* The CSS Grouping Selector
+                The grouping selector selects all the HTML elements with the same style definitions.
+                It will be better to group the selectors, to minimize the code.
+                To group selectors, separate each selector with a comma.  */
+
+                
+                /* h1, h2, p {
+                text-align: center;
+                color: red;
+                } */
+    </style>
+</head>
+<body>
+    <p>Every paragraph will be affected by the style.</p>
+        <p >Me too!</p>
+        <p>And me!</p>
+
+
+        <!-- FOR ID -->
+        <!-- <p id="para1">And me!</p> -->
+        <p>And me!</p>
+
+        <!-- FOR CLASS -->
+        <p class="center large">And me!</p>
+
+
+        <h1>I am learning CSS</h1>
+        
+        <h2>I WIll Do and i am doing</h2>
+
+
+
+
+</body>
+</html>

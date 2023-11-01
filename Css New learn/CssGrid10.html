@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Grid</title>
+    <style>
+        /* Naming Grid Items
+        The grid-area property can also be used to assign names to grid items.
+        Named grid items can be referred to by the grid-template-areas property of the grid container. */
+
+        /* .item1 {
+        grid-area: myArea;
+        }
+
+        .grid-container {
+        display: grid; */
+
+        /* Each row is defined by apostrophes (' ')
+        The columns in each row is defined inside the apostrophes, separated by a space. */
+
+
+        /* grid-template-areas: 'myArea myArea myArea myArea myArea'  ;
+        gap: 10px;
+        background-color: #2196F3;
+        padding: 10px;
+        }
+
+        .grid-container > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+        } */
+
+
+
+        /* Let "myArea" span two columns in a five columns grid layout (period signs represent items with no name): */
+
+        /* .item1 {
+        grid-area: myArea;
+        }
+
+        .grid-container {
+        display: grid;
+        grid-template-areas: 'myArea myArea . . .';
+        gap: 10px;
+        background-color: #2196F3;
+        padding: 10px;
+        }
+
+        .grid-container > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+        } */
+
+
+        /* Make "item1" span two columns and two rows: */
+        .item1 {
+        grid-area: myArea;
+        }
+
+        .grid-container {
+        display: grid;
+        grid-template-areas: 'myArea myArea . . .'   'myArea myArea . . .' ;
+        gap: 10px;
+        background-color: #2196F3;
+        padding: 10px;
+        }
+
+        .grid-container > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>The grid-area Property</h1>
+
+    <p>You can use the <em>grid-area</em> property to name grid items.</p>
+
+    <p>You can refer to the name when you set up the grid layout, by using the <em>grid-template-areas</em> property on the grid container.</p>
+
+    <p>Item1, is called "myArea" and will take up the place of all five columns:</p>
+
+    <div class="grid-container">
+    <div class="item1">1</div>
+    <div class="item2">2</div>
+    <div class="item3">3</div>  
+    <div class="item4">4</div>
+    <div class="item5">5</div>
+    <div class="item6">6</div>
+    <div class="item6">7</div>
+    <div class="item6">8</div>
+    <div class="item6">9</div>
+    <div class="item6">10</div>
+    </div>
+
+</body>
+</html>

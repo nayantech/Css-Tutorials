@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Property</title>
+    <style>
+        .flex-container{
+            display: flex;
+            /* flex-wrap: wrap; */
+            font-size: 20px;
+            text-align: center;
+            width: 100%;
+            /* justify-content: space-evenly; */
+           
+        }
+        .flex-item-left{
+            /* width: 30%;          */
+            background-color: blue;
+        }
+
+        .flex-item-right{
+            /* width: 20%;          */
+            background-color: yellow;
+        }
+
+        @media(max-width:600px){
+            .flex-item-left,  .flex-item-right{
+                flex: 100%;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <h1>HTml is a hypertext markup language</h1>
+    <p>Css is a cascading style sheet</p>
+
+    <div class="flex-container">
+        <div class="flex-item-left">
+            Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti dolore sequi quis at error consequuntur recusandae, incidunt vero fugit voluptate corporis unde consequatur obcaecati accusamus qui quidem, repellendus ex quod culpa officia commodi. Libero ea qui quis cumque quibusdam incidunt! 
+        </div>
+
+        <div class="flex-item-right">
+            Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quod deleniti iure excepturi facilis adipisci fuga mollitia libero, cupiditate perspiciatis voluptates. Eum, molestiae veritatis fugiat, necessitatibus ad ducimus doloremque natus, eos porro aut debitis tempore! Recusandae vel animi officia reiciendis. 
+        </div>
+    </div>
+</body>
+</html>

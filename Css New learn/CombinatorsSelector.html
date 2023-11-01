@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator Selector</title>
+    <style>
+        /* CSS Combinators
+        A combinator is something that explains the relationship between the selectors.
+        A CSS selector can contain more than one simple selector. Between the simple selectors, we can include a combinator. */
+
+        /* There are four different combinators in CSS:
+
+        1) descendant selector (space)
+        2) child selector (>)
+        3) adjacent sibling selector (+)
+        4) general sibling selector (~) */
+
+
+        /* Descendant Selector
+        The descendant selector matches all elements that are descendants of a specified element.
+        The following example selects all <p> elements inside <div> elements:  */
+
+            /* div p {
+                background-color: yellow;
+                } */
+
+
+                /* Child Selector (>)
+                The child selector selects all elements that are the children of a specified element.
+                The following example selects all <p> elements that are children of a <div> element:   */
+
+                    /* div > p {
+                    background-color: yellow;
+                    } */
+
+
+                    /* Adjacent Sibling Selector (+)
+                    The adjacent sibling selector is used to select an element that is directly after another specific element.
+                    Sibling elements must have the same parent element, and "adjacent" means "immediately following".
+                    The following example selects the first <p> element that are placed immediately after <div> elements: */
+
+                        /* div + p {
+                        background-color: yellow;
+                        } */
+
+
+                        /* General Sibling Selector (~)
+                        The general sibling selector selects all elements that are next siblings of a specified element.
+                        The following example selects all <p> elements that are next siblings of <div> elements:  */
+                            div ~ p {
+                            background-color: yellow;
+                            }
+    </style>
+</head>
+<body>
+    <h2>Descendant Selector</h2>
+
+    <p>The descendant selector matches all elements that are descendants of a specified element.</p>
+    
+    <div>
+      <p>Paragraph 1 in the div.</p>
+      <p>Paragraph 2 in the div.</p>
+      <section><p>Paragraph 3 in the div.</p></section>
+    </div>
+    
+    <p>Paragraph 4. Not in a div.</p>
+    <p>Paragraph 5. Not in a div.</p>
+</body>
+</html>

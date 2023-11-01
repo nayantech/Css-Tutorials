@@ -10,7 +10,8 @@ div, p{
     color: blue;
 }
 
-h1{
+/* Element Selector */
+h1{   
     color: aqua;
 }
 

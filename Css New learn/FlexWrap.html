@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox all property</title>
+    <style>
+
+        /* The flex-wrap Property
+        The flex-wrap property specifies whether the flex items should wrap or not. */
+
+       /* .flex-container { */
+        /* border: 1px solid red; */
+        /* display: flex;      */
+        /* flex-wrap: wrap; */
+        /* flex-wrap: nowrap; */
+        /* flex-wrap: wrap-reverse; */
+        /* } */
+
+
+        /* The flex-flow Property
+        The flex-flow property is a shorthand property for setting both the flex-direction and flex-wrap properties. */
+
+        /* .flex-container {
+        display: flex;
+        flex-flow: row wrap;
+        } */
+
+
+        /* The justify-content Property
+        The justify-content property is used to align the flex items: */
+
+        /* .flex-container { */
+            /* border: 1px solid red; */
+            /* display: flex; */
+            /* flex-flow: row-reverse wrap; */
+            /* justify-content: center; */
+            /* justify-content: flex-start; */
+            /* justify-content: flex-end; */
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+            /* } */
+
+
+
+
+            /* The align-items Property
+            The align-items property is used to align the flex items. */
+
+
+
+            /* .flex-container {
+                border: 1px solid red;
+                display: flex; 
+                height: 200px; */
+
+                /* align-items: center; */
+                /* align-items: flex-start; */
+                /* align-items: flex-end; */
+
+                /* The stretch value stretches the flex items to fill the container (this is default): */
+                /* align-items: stretch;   */
+
+                /* align-items: baseline; */
+                /* } */
+
+
+
+                /* The align-content Property
+                The align-content property is used to align the flex lines. */
+
+                .flex-container {
+                    border: 1px solid red;
+                display: flex;
+                height: 600px;
+                flex-wrap: wrap;
+                
+                /* align-content: space-between; */
+                /* align-content: space-around; */
+                /* align-content: stretch; */
+                /* align-content: center; */
+                /* align-content: flex-start; */
+                /* align-content: flex-end; */
+                }
+
+
+
+           .flex-container  div{
+            background-color: black;
+            border: 1px solid red;
+            width: 100px;
+
+            /* in aling items when you apply aling-items:stretch; then you comment hight */
+            /* in aling content when you apply align content that time hight comment you */
+
+            height: 100px;  
+
+
+            margin: 10px;
+            color: white;
+            text-align: center;
+            font-size: 40px;
+           
+        }
+
+
+
+
+        /* Perfect Centering */
+            section{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 300px;
+                border: 1px solid red;
+            }
+            section div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100px;
+                height: 100px;
+                background-color: yellow;
+                text-align: center;
+            }
+
+        
+    </style>
+</head>
+<body>
+    
+
+    <!-- for only FlesWrap and FlexFlow -->
+    <!-- <section class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </section> -->
+
+
+    <!-- for only justify-content and align-items-->
+    <!-- <section class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        
+    </section> -->
+
+
+    <!-- only for align-content -->
+    <!-- <section class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        
+    </section> -->
+
+
+
+    
+  <p>
+    <!-- align-content	-- Modifies the behavior of the flex-wrap property. It is similar to align-items, but instead of aligning flex items, it aligns flex lines
+
+    align-items	-- Vertically aligns the flex items when the items do not use all available space on the cross-axis
+
+    display	-- Specifies the type of box used for an HTML element
+
+    flex-direction	-- Specifies the direction of the flexible items inside a flex container
+
+    flex-flow	-- A shorthand property for flex-direction and flex-wrap
+
+    flex-wrap	-- Specifies whether the flex items should wrap or not, if there is not enough room for them on one flex line
+
+    justify-content	-- Horizontally aligns the flex items when the items do not use all available space on the main-axis -->
+
+  </p>
+
+
+  <section>
+    <div>
+        1
+    </div>
+  </section>
+</body>
+</html>

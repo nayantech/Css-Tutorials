@@ -2,3 +2,6 @@ p{
     background-color: aquamarine;
 
 }
+p:hover{
+    background-color: black;
+}

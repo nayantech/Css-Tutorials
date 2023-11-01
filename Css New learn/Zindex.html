@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Index</title>
+    <style>
+        /* CSS Layout - The z-index Property
+        The z-index property specifies the stack order of an element.
+        The z-index Property
+        When elements are positioned, they can overlap other elements.
+
+        The z-index property specifies the stack order of an element (which element should be placed in front of, or behind, the others).
+
+        An element can have a positive or negative stack order:
+
+        Note: z-index only works on positioned elements (position: absolute, position: relative, position: fixed, or position: sticky) and flex items (elements that are direct children of display: flex elements).
+
+        Here we see that an element with greater stack order is always above an element with a lower stack order: */
+
+
+
+                .container {
+        position: relative;
+        }
+
+        .black-box {
+        position: relative;
+        z-index: 4;
+        border: 2px solid black;
+        height: 100px;
+        margin: 30px;
+        }
+
+        .gray-box {
+        position: absolute;
+        
+        /* z-index : 3 is highest number they show all of the above highest number == toppest */
+        /* z-index: -1 is top lowet show */
+        z-index: 5;   
+
+
+        background: lightgray;
+        height: 60px;
+        width: 70%;
+        left: 50px;
+        top: 50px;
+        }
+
+        .green-box {
+        position: absolute;
+        z-index: 6;
+        background: lightgreen;
+        width: 35%;
+        left: 270px;
+        top: -15px;
+        height: 100px;
+        }
+            </style>
+</head>
+<body>
+    <div class="container">
+    <div class="black-box">Black box</div>
+    <div class="gray-box">Gray box</div>
+    <div class="green-box">Green box</div>
+    </div>
+</body>
+</html>
